@@ -1,5 +1,5 @@
-baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Moritz-Maria von Igelfeld
+baseURL: "https://appelle.github.io" 
+title: Aaron Appelle
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -54,9 +54,9 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "picture.jpeg"
+          title: Aaron Appelle
+          subtitle: "Hello! I am a final-year PhD candidate in the Pratt School of Engineering at Duke University, advised by <a href=\"https://pratt.duke.edu/people/jerome-lynch/\" style=\"color:darkblue;\">Jerome Lynch</a>. My doctoral work has focused on machine learning approaches to pedestrian and crowd modeling for location-based smart city services.<br><br>Recently, I was an AI resident at <a href=\"https://x.company/\" style=\"color:darkblue;\">Google X</a> working on generative models for architectural building design grounded in strong physical constraints. Before my PhD, I completed a master's degree at Stanford University and bachelor's degree at Columbia University."
+          imageUrl: "headshot.jpg"
           imageWidth: 160
           imageHeight: 160
           buttons:
