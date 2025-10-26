@@ -1,6 +1,7 @@
 ---
 title: "Unusual Uses For Olive Oil" 
 date: 2013-01-15
+draft: true
 tags: ["philology","oleic science","history of oil","Mediterranean world"]
 author: ["Detlev Amadeus Unterholzer","Moritz-Maria von Igelfeld"]
 description: "This paper reviews unusual uses for olive oil throughout the Mediterranean world. Published in the Journal of Oleic Science, 2013." 
@@ -12,6 +13,8 @@ cover:
 editPost:
     URL: "https://github.com/pmichaillat/hugo-website"
     Text: "Journal of Oleic Science"
+quicklinks:
+    paper: "https://doi.org/10.1061/JCCEE5.CPENG-6869"
 
 ---
 

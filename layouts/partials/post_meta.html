@@ -21,3 +21,21 @@
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;&middot;&nbsp;" | safeHTML -}}
 {{- end -}}
+
+{{- $quickLinks := slice }}
+{{- with .Params.quicklinks }}
+  {{- with .paper }}
+    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" style=\"color:#0066cc;\">Paper</a>" .) }}
+  {{- end }}
+  {{- with .website }}
+    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" style=\"color:#0066cc;\">Website</a>" .) }}
+  {{- end }}
+  {{- with .code }}
+    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" style=\"color:#0066cc;\">Code</a>" .) }}
+  {{- end }}
+{{- end }}
+
+{{- if $quickLinks }}
+  {{- if ($scratch.Get "meta") }}&nbsp;&middot;&nbsp;{{- end }}
+  {{- delimit $quickLinks "&nbsp;&middot;&nbsp;" | safeHTML -}}
+{{- end -}}

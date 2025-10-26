@@ -112,7 +112,7 @@
     border-radius: var(--radius);
     width: 180px;
     height: 135px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .entry-cover a {
