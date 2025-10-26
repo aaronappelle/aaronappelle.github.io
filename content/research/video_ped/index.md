@@ -6,6 +6,7 @@ tags: ["deep learning","pedestrian dynamics","video generation","world models","
 author: ["Aaron Appelle", "Jerome P. Lynch"]
 description: "This paper proposes a rigorous evaluation protocol to benchmark text-to-video and image-to-video models as implicit simulators of pedestrian dynamics. Preprint, under review." 
 summary: "We propose a rigorous evaluation protocol to benchmark text-to-video and image-to-video models as implicit simulators of pedestrian dynamics, reconstructing 2D bird's-eye view trajectories from pixel-space without known camera parameters to analyze multi-agent behavior in generated videos." 
+venueText: "arXiv Preprint"
 cover:
     image: "ped.png"
     alt: "Video Models as Simulators of Multi-Person Pedestrian Trajectories"

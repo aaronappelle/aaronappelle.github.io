@@ -28,9 +28,10 @@
         <a href="{{ $imgdl }}" target="_blank" rel="noopener noreferrer">
     {{- end }}
 
-    {{- /* Add venue banner if showVenueBanner is enabled and venue is specified */}}
+    {{- /* Add venue banner if showVenueBanner and showResearchSummaries are enabled and venue is specified */}}
     {{- $showVenueBanner := site.Params.showVenueBanner | default true }}
-    {{- if (and $showVenueBanner .Params.venue (not $.IsSingle)) }}
+    {{- $showResearchSummaries := site.Params.showResearchSummaries | default true }}
+    {{- if (and $showVenueBanner $showResearchSummaries .Params.venue (not $.IsSingle)) }}
     <div class="venue-banner-wrapper">
     {{- end }}
 
@@ -57,7 +58,7 @@
     {{- end }}
 
     {{- /* Display venue banner overlay */}}
-    {{- if (and $showVenueBanner .Params.venue (not $.IsSingle)) }}
+    {{- if (and $showVenueBanner $showResearchSummaries .Params.venue (not $.IsSingle)) }}
         <span class="venue-banner">{{ .Params.venue }}</span>
     </div>
     {{- end }}

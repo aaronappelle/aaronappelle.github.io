@@ -1,6 +1,10 @@
 {{- $scratch := newScratch }}
 
-{{- if not .Date.IsZero -}}
+{{- $showResearchSummaries := site.Params.showResearchSummaries | default true }}
+{{- $isResearchSection := eq .Section "research" }}
+{{- $showDate := or $showResearchSummaries (not $isResearchSection) }}
+
+{{- if and (not .Date.IsZero) $showDate -}}
 {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
 {{- end }}
 
@@ -25,20 +29,19 @@
 {{- $quickLinks := slice }}
 {{- with .Params.quicklinks }}
   {{- with .paper }}
-    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" style=\"color:#0066cc;\">Paper</a>" .) }}
+    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" class=\"research-link-button\">Paper</a>" .) }}
   {{- end }}
   {{- with .website }}
-    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" style=\"color:#0066cc;\">Website</a>" .) }}
+    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" class=\"research-link-button\">Website</a>" .) }}
   {{- end }}
   {{- with .workshop }}
-    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" style=\"color:#0066cc;\">Workshop</a>" .) }}
+    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" class=\"research-link-button\">Workshop</a>" .) }}
   {{- end }}
   {{- with .code }}
-    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" style=\"color:#0066cc;\">Code</a>" .) }}
+    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" class=\"research-link-button\">Code</a>" .) }}
   {{- end }}
 {{- end }}
 
 {{- if $quickLinks }}
-  {{- if ($scratch.Get "meta") }}&nbsp;&middot;&nbsp;{{- end }}
-  {{- delimit $quickLinks "&nbsp;&middot;&nbsp;" | safeHTML -}}
+  <span class="research-links-container">{{- delimit $quickLinks " " | safeHTML -}}</span>
 {{- end -}}

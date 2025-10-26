@@ -110,8 +110,11 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     
-    # Show venue banners on research page thumbnails
+    # Show venue banners on research page thumbnails (only when summaries are shown)
     showVenueBanner: true
+    
+    # Show research summaries on /research page (when false, shows venue text instead)
+    showResearchSummaries: false
     label:
       text: "Home"
       icon: favicon.svg

@@ -6,6 +6,7 @@ tags: ["deep learning","wearable sensors","IoT","naval systems","damage control"
 author: ["Eric Stach", "Aaron Appelle", "Jerome Lynch", "Liming Salvino"]
 description: "This paper develops a holistic shipboard monitoring system that provides real-time actionable information from environmental and wearable sensors to enhance the performance and safety of damage control crews. Published in SPIE Proceedings, 2025." 
 summary: "We develop a holistic shipboard monitoring system using extremely low-power wearable sensors and BLE connectivity to monitor crew kinematic and biometric data plus ship environmental conditions, enabling real-time crew health and performance tracking during emergency response scenarios." 
+venueText: "SPIE 2025 Sensors and Smart Structures Technologies"
 cover:
     image: "cybersys.png"
     alt: "Embedded Sensing System for Shipboard Damage Control"

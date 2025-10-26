@@ -6,6 +6,7 @@ tags: ["deep learning","pedestrian localization","ground vibrations","civil engi
 author: ["Aaron Appelle", "Liming Salvino", "Jerome P. Lynch"]
 description: "This paper introduces a novel deep-learning-based footstep localization system using ground vibrations measured using geophones. Published in the Journal of Computing in Civil Engineering, 2024." 
 summary: "This paper introduces a novel deep-learning-based footstep localization system using ground vibrations measured using geophones and develops a scalable method to automatically collect training data. We show that it significantly outperforms acoustic localization." 
+venueText: "ASCE Journal of Computing in Civil Engineering"
 cover:
     image: "jcce.png"
     alt: "Footstep Vibration-Based Pedestrian Localization System"

@@ -1,0 +1,59 @@
+/* Research Link Buttons Styling */
+.post-entry .entry-footer {
+    position: relative;
+    padding-right: 120px;
+    min-height: 24px;
+    display: block;
+}
+
+.research-links-container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.post-entry .entry-footer > :not(.research-links-container) {
+    display: inline;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.research-link-button {
+    display: inline-block;
+    padding: 3px 8px;
+    border: 1.5px solid #0066cc;
+    border-radius: 4px;
+    color: #0066cc !important;
+    text-decoration: none !important;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    white-space: nowrap;
+}
+
+.research-link-button:hover {
+    background-color: #0066cc;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* Dark mode adjustments if needed */
+@media (prefers-color-scheme: dark) {
+    .research-link-button {
+        border-color: #4d94ff;
+        color: #4d94ff !important;
+    }
+    
+    .research-link-button:hover {
+        background-color: #4d94ff;
+        color: #ffffff !important;
+    }
+}
+

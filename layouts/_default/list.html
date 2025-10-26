@@ -70,7 +70,13 @@
     </header>
     {{- if (ne (.Param "hideSummary") true) }}
     <div class="entry-content">
+      {{- if site.Params.showResearchSummaries }}
       <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+      {{- else if .Params.venueText }}
+      <p>{{ .Params.venueText }}</p>
+      {{- else }}
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+      {{- end }}
     </div>
     {{- end }}
     {{- if not (.Param "hideMeta") }}

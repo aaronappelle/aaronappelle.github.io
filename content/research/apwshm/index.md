@@ -6,6 +6,7 @@ tags: ["wearable sensors","multimodal sensing","physiological monitoring","geoph
 author: ["Aaron Appelle", "Liming Salvino", "Yun-An Lin", "Taylor Pierce", "Emerson Noble", "Gabriel Draughon", "Kenneth J. Loh", "Jerome P. Lynch"]
 description: "This paper describes an intelligent environment that consolidates wearable skin-strain sensors, geophones, microphones, and video cameras to characterize physical effort. Published in 9APWSHM, 2023." 
 summary: "We describe an intelligent environment that consolidates wearable skin-strain sensors for physiological monitoring, geophones and microphones to record ambient vibrations and sounds, and video cameras to visually observe human activities, demonstrating synchronization and integration of multimodal data streams to differentiate walking effort." 
+venueText: "Materials Research Proceedings 2023"
 cover:
     image: "apwshm.png"
     alt: "Integration of Wearable and Ambient Sensors"
