@@ -1,0 +1,49 @@
+/* Venue Banner Styles */
+.venue-banner-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.venue-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px 8px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    background: #4a7ba7;
+    border-radius: 0;
+    z-index: 10;
+    pointer-events: none;
+    line-height: 1.2;
+}
+
+/* Ensure the entry-cover figure aligns to top for consistent spacing with title */
+.post-entry .entry-cover {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .venue-banner {
+        padding: 2px 6px;
+        font-size: 0.6rem;
+    }
+    
+    /* Reset alignment on mobile when stacked vertically */
+    .post-entry .entry-cover {
+        align-self: center;
+    }
+}
+
+/* Ensure proper stacking context */
+.entry-cover {
+    position: relative;
+}
+

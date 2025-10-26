@@ -109,6 +109,9 @@ params:
     cover:
         hiddenInList: false
         hiddenInSingle: true
+    
+    # Show venue banners on research page thumbnails
+    showVenueBanner: true
     label:
       text: "Home"
       icon: favicon.svg

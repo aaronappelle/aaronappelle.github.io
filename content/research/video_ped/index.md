@@ -10,6 +10,7 @@ cover:
     image: "ped.png"
     alt: "Video Models as Simulators of Multi-Person Pedestrian Trajectories"
     relative: true
+venue: "arXiv"
 editPost:
     URL: "https://doi.org/10.48550/arXiv.2510.20182"
     Text: "arXiv Preprint"

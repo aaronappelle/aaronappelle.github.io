@@ -10,6 +10,7 @@ cover:
     image: "cybersys.png"
     alt: "Embedded Sensing System for Shipboard Damage Control"
     relative: true
+venue: "SPIE"
 editPost:
     URL: "https://doi.org/10.1117/12.3050331"
     Text: "SPIE Proceedings"

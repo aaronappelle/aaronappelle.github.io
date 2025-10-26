@@ -10,6 +10,7 @@ cover:
     image: "spie.png"
     alt: "Pedestrian Footstep Localization System"
     relative: true
+venue: "SPIE"
 editPost:
     URL: "https://doi.org/10.1117/12.3009826"
     Text: "SPIE Proceedings"

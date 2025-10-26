@@ -10,6 +10,7 @@ cover:
     image: "apwshm.png"
     alt: "Integration of Wearable and Ambient Sensors"
     relative: true
+venue: "APWSHM"
 editPost:
     URL: "https://doi.org/10.21741/9781644902455-39"
     Text: "Materials Research Proceedings"

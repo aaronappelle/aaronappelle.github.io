@@ -10,6 +10,7 @@ cover:
     image: "ewshm.png"
     alt: "Wearable Sensor Platform with Graphene Motion Tape"
     relative: true
+venue: "EWSHM"
 editPost:
     URL: "https://doi.org/10.1007/978-3-031-07254-3_90"
     Text: "EWSHM 2022 Proceedings"

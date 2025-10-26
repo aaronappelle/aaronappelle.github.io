@@ -10,6 +10,7 @@ cover:
     image: "jcce.png"
     alt: "Footstep Vibration-Based Pedestrian Localization System"
     relative: true
+venue: "ASCE"
 editPost:
     URL: "https://ascelibrary.org/doi/full/10.1061/JCCEE5.CPENG-6869"
     Text: "Journal of Computing in Civil Engineering"

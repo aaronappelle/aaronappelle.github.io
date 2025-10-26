@@ -10,6 +10,7 @@ cover:
     image: "icml_wm.png"
     alt: "Image-To-Video Models for Pedestrian Dynamics Simulation"
     relative: true
+venue: "ICML Workshop"
 editPost:
     URL: "https://doi.org/10.48550/arXiv.2510.17731"
     Text: "arXiv Preprint"
