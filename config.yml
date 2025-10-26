@@ -16,7 +16,7 @@ menu:
         #   url: books/
         #   weight: 5 
         - name: Research
-          url: papers/
+          url: research/
           weight: 1
         # - name: Courses
         #   url: courses/
@@ -47,7 +47,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["papers"]
+    MainSections: ["research"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -64,7 +64,7 @@ params:
           imageHeight: 160
           buttons:
             - name: Research
-              url: papers/
+              url: research/
             - name: More Info
               url: moreinfo/
             # - name: Data
