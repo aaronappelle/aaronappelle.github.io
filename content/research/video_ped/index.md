@@ -1,6 +1,7 @@
 ---
 title: "Evaluating Video Models as Simulators of Multi-Person Pedestrian Trajectories" 
 date: 2025-10-23
+weight: 10
 tags: ["deep learning","pedestrian dynamics","video generation","world models","simulations","computer vision"]
 author: ["Aaron Appelle", "Jerome P. Lynch"]
 description: "This paper proposes a rigorous evaluation protocol to benchmark text-to-video and image-to-video models as implicit simulators of pedestrian dynamics. Preprint, under review." 

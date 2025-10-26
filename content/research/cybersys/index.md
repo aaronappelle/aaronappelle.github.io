@@ -1,6 +1,7 @@
 ---
 title: "Embedded sensing system for shipboard damage control scenarios" 
 date: 2025-05-12
+weight: 50
 tags: ["deep learning","wearable sensors","IoT","naval systems","damage control","cyber-physical systems","health monitoring"]
 author: ["Eric Stach", "Aaron Appelle", "Jerome Lynch", "Liming Salvino"]
 description: "This paper develops a holistic shipboard monitoring system that provides real-time actionable information from environmental and wearable sensors to enhance the performance and safety of damage control crews. Published in SPIE Proceedings, 2025." 

@@ -1,6 +1,7 @@
 ---
 title: "Can Image-To-Video Models Simulate Pedestrian Dynamics?" 
 date: 2025-07-19
+weight: 20
 tags: ["deep learning","pedestrian dynamics","world models","simulations","computer vision"]
 author: ["Aaron Appelle", "Jerome P. Lynch"]
 description: "This paper investigates whether image-to-video models can generate realistic pedestrian movement patterns in crowded public scenes. Presented at ICML 2025 Workshop on Building Physically Plausible World Models." 

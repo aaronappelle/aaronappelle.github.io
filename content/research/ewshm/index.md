@@ -1,6 +1,7 @@
 ---
 title: "Wearable Sensor Platform to Monitor Physical Exertion Using Graphene Motion Tape" 
 date: 2022-06-19
+weight: 70
 tags: ["wearable sensors","graphene","IoT","structural health monitoring","muscle monitoring","compressed sensing"]
 author: ["Aaron Appelle", "Yun-An Lin", "Emerson Noble", "Liming Salvino", "Kenneth J. Loh", "Jerome P. Lynch"]
 description: "This paper presents a power-efficient, wearable sensing platform to infer distributed muscle exertion in real time using graphene Motion Tape. Published in EWSHM 2022." 

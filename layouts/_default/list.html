@@ -28,6 +28,9 @@
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- else }}
+{{- /* Sort by weight (if set), then by date descending */ -}}
+{{- $pages = $pages.ByWeight }}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}

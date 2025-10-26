@@ -1,6 +1,7 @@
 ---
 title: "Automated and Scalable Footstep Vibration-Based Pedestrian Localization in Built Environments Using Deep Learning" 
 date: 2025-02-12
+weight: 30
 tags: ["deep learning","pedestrian localization","ground vibrations","civil engineering","urban infrastructure"]
 author: ["Aaron Appelle", "Liming Salvino", "Jerome P. Lynch"]
 description: "This paper introduces a novel deep-learning-based footstep localization system using ground vibrations measured using geophones. Published in the Journal of Computing in Civil Engineering, 2024." 

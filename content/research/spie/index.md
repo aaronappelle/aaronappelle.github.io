@@ -1,6 +1,7 @@
 ---
 title: "Pedestrian Footstep Localization Using a Deep Convolutional Network for Time Difference of Arrival Estimation" 
 date: 2024-05-09
+weight: 40
 tags: ["deep learning","pedestrian localization","ground vibrations","civil engineering","urban infrastructure"]
 author: ["Aaron Appelle", "Liming Salvino", "Jerome P. Lynch"]
 description: "This paper presents a resource-constrained localization system that uses geophones to map pedestrian locations in outdoor spaces. Published in SPIE Proceedings, 2024." 

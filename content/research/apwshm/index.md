@@ -1,6 +1,7 @@
 ---
 title: "Integration of wearable and ambient sensors towards characterization of physical effort" 
 date: 2023-03-30
+weight: 60
 tags: ["wearable sensors","multimodal sensing","physiological monitoring","geophones","microphones","computer vision","signal processing","synchronization"]
 author: ["Aaron Appelle", "Liming Salvino", "Yun-An Lin", "Taylor Pierce", "Emerson Noble", "Gabriel Draughon", "Kenneth J. Loh", "Jerome P. Lynch"]
 description: "This paper describes an intelligent environment that consolidates wearable skin-strain sensors, geophones, microphones, and video cameras to characterize physical effort. Published in 9APWSHM, 2023." 
