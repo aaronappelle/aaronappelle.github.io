@@ -5,7 +5,7 @@ weight: 50
 tags: ["deep learning","wearable sensors","IoT","naval systems","damage control","cyber-physical systems","health monitoring"]
 author: ["Eric Stach", "Aaron Appelle", "Jerome Lynch", "Liming Salvino"]
 description: "This paper develops a holistic shipboard monitoring system that provides real-time actionable information from environmental and wearable sensors to enhance the performance and safety of damage control crews. Published in SPIE Proceedings, 2025." 
-summary: "We develop a holistic shipboard monitoring system using extremely low-power wearable sensors and BLE connectivity to monitor crew kinematic and biometric data plus ship environmental conditions, enabling real-time crew health and performance tracking during emergency response scenarios." 
+summary: "We develop a shipboard monitoring system using extremely low-power wearable sensors and BLE connectivity. The system measures kinematic and biometric data plus ship environmental conditions for real-time crew health tracking during emergency response scenarios." 
 venueText: "SPIE 2025 Sensors and Smart Structures Technologies"
 cover:
     image: "cybersys.png"

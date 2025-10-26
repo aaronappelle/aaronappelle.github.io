@@ -5,7 +5,7 @@ weight: 40
 tags: ["deep learning","pedestrian localization","ground vibrations","civil engineering","urban infrastructure"]
 author: ["Aaron Appelle", "Liming Salvino", "Jerome P. Lynch"]
 description: "This paper presents a resource-constrained localization system that uses geophones to map pedestrian locations in outdoor spaces. Published in SPIE Proceedings, 2024." 
-summary: "This paper presents a resource-constrained localization system that uses geophones to map pedestrian locations in outdoor spaces. The system uses a 1D-CNN to compute time differences of arrival (TDOA) and achieves localization accuracy of less than 1 meter." 
+summary: "We present a privacy-preserving localization system that uses geophones to map pedestrian locations in outdoor spaces. The system uses a 1D-CNN to compute time differences of arrival (TDOA) and achieves localization accuracy of less than 1 meter." 
 venueText: "SPIE 2024 Nondestructive Characterization and Monitoring"
 cover:
     image: "spie.png"

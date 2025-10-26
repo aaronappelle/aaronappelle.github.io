@@ -5,7 +5,7 @@ weight: 70
 tags: ["wearable sensors","graphene","IoT","structural health monitoring","muscle monitoring","compressed sensing"]
 author: ["Aaron Appelle", "Yun-An Lin", "Emerson Noble", "Liming Salvino", "Kenneth J. Loh", "Jerome P. Lynch"]
 description: "This paper presents a power-efficient, wearable sensing platform to infer distributed muscle exertion in real time using graphene Motion Tape. Published in EWSHM 2022." 
-summary: "We present a power-efficient wearable sensing platform that uses graphene Motion Tape integrated with the Urbano IoT sensor node to infer distributed muscle exertion in real time, capturing muscle engagement and skin strains over larger areas with fewer sensor nodes than existing body sensor networks." 
+summary: "We present a power-efficient wearable sensing platform that uses graphene motion-tape sensors integrated with an IoT sensor node to infer distributed muscle exertion in real time. We use compressed sensing to efficiently transmit signal information." 
 venueText: "European Workshop on Structural Health Monitoring 2022"
 cover:
     image: "ewshm.png"

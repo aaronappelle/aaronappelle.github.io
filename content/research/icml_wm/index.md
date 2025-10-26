@@ -5,13 +5,13 @@ weight: 20
 tags: ["deep learning","pedestrian dynamics","world models","simulations","computer vision"]
 author: ["Aaron Appelle", "Jerome P. Lynch"]
 description: "This paper investigates whether image-to-video models can generate realistic pedestrian movement patterns in crowded public scenes. Presented at ICML 2025 Workshop on Building Physically Plausible World Models." 
-summary: "We investigate whether image-to-video models based on diffusion transformers can generate realistic pedestrian movement patterns in crowded public scenes by conditioning on keyframes and evaluating trajectory prediction performance using quantitative measures of pedestrian dynamics." 
+summary: "We investigate whether image-to-video (I2V) models based on diffusion transformers can generate realistic pedestrian movement patterns in crowded public scenes by conditioning on keyframes from pedestrian benchmark datasets." 
 venueText: "ICML 2025 Workshop on Building Physically Plausible World Models"
 cover:
     image: "icml_wm.png"
     alt: "Image-To-Video Models for Pedestrian Dynamics Simulation"
     relative: true
-venue: "ICML Workshop"
+venue: "ICML World Models"
 editPost:
     URL: "https://doi.org/10.48550/arXiv.2510.17731"
     Text: "arXiv Preprint"

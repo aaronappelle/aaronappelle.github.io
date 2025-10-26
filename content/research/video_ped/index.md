@@ -5,7 +5,7 @@ weight: 10
 tags: ["deep learning","pedestrian dynamics","video generation","world models","simulations","computer vision"]
 author: ["Aaron Appelle", "Jerome P. Lynch"]
 description: "This paper proposes a rigorous evaluation protocol to benchmark text-to-video and image-to-video models as implicit simulators of pedestrian dynamics. Preprint, under review." 
-summary: "We propose a rigorous evaluation protocol to benchmark text-to-video and image-to-video models as implicit simulators of pedestrian dynamics, reconstructing 2D bird's-eye view trajectories from pixel-space without known camera parameters to analyze multi-agent behavior in generated videos." 
+summary: "We propose an evaluation protocol to benchmark text-to-video (T2V) and image-to-video (I2V) models as implicit simulators of pedestrian dynamics. We use 3D reconstruction and depth estimation to extract pedestrian trajectories without known camera parameters." 
 venueText: "arXiv Preprint"
 cover:
     image: "ped.png"
