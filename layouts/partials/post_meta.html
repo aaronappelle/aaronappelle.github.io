@@ -30,6 +30,9 @@
   {{- with .website }}
     {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" style=\"color:#0066cc;\">Website</a>" .) }}
   {{- end }}
+  {{- with .workshop }}
+    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" style=\"color:#0066cc;\">Workshop</a>" .) }}
+  {{- end }}
   {{- with .code }}
     {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" style=\"color:#0066cc;\">Code</a>" .) }}
   {{- end }}
