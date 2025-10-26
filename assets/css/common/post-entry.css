@@ -47,8 +47,9 @@
     gap: 20px;
 }
 
-.post-entry:hover {
+.post-entry:has(.entry-link):hover {
      border: 2px solid var(--darkcolor);
+     cursor: pointer;
 }
 
 .tag-entry .entry-cover {
