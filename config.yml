@@ -114,7 +114,7 @@ params:
     showVenueBanner: true
     
     # Show research summaries on /research page (when false, shows venue text instead)
-    showResearchSummaries: false
+    showResearchSummaries: true
     label:
       text: "Home"
       icon: favicon.svg
