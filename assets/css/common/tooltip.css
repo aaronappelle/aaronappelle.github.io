@@ -1,0 +1,65 @@
+/* Tooltip styles for inline annotations */
+.tooltip {
+    position: relative;
+    display: inline;
+    cursor: help;
+    border-bottom: 1px dotted var(--primary);
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    background-color: var(--theme);
+    color: var(--content);
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+    /* Position */
+    position: absolute;
+    z-index: 1000;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* Width and text */
+    max-width: 600px;
+    width: max-content;
+    white-space: normal;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    
+    /* Fade effect */
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--border) transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .tooltip .tooltip-text {
+        max-width: 450px;
+        width: max-content;
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+}
+
