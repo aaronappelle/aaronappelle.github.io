@@ -117,7 +117,7 @@ params:
     showResearchSummaries: true
     label:
       text: "Home"
-      icon: favicon.svg
+      icon: favicon_aa.jpg
       iconHeight: 22
 
 markup:
