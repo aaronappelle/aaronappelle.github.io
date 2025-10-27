@@ -79,5 +79,44 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, 100);
     }
+    
+    // Automatic URL update based on scroll position
+    // Track which section is currently in view
+    const sections = document.querySelectorAll('section[id]');
+    let currentSection = '';
+    
+    // Use Intersection Observer for efficient scroll detection
+    const observerOptions = {
+        rootMargin: '-20% 0px -70% 0px', // Trigger when section is roughly in the middle of viewport
+        threshold: 0
+    };
+    
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const sectionId = entry.target.getAttribute('id');
+                
+                // Update URL based on which section is visible
+                if (sectionId === 'home') {
+                    // Remove hash when scrolled back to home section
+                    if (window.location.hash) {
+                        history.replaceState(null, null, window.location.pathname);
+                        currentSection = '';
+                    }
+                } else {
+                    // Update hash for other sections
+                    if (currentSection !== sectionId) {
+                        history.replaceState(null, null, '#' + sectionId);
+                        currentSection = sectionId;
+                    }
+                }
+            }
+        });
+    }, observerOptions);
+    
+    // Observe all sections
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
 });
 
