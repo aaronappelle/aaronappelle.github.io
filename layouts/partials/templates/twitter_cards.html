@@ -1,7 +1,7 @@
 {{- if .IsHome }}
-  {{- /* Use transparent image for homepage to prevent thumbnails */ -}}
+  {{- /* Use favicon for homepage like Zach's site */ -}}
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{{ "transparent.png" | absURL }}">
+<meta name="twitter:image" content="{{ "favicon.svg" | absURL }}">
 {{- else if and .IsPage .Params.cover.image -}}
   {{- /* Use cover image for individual pages */ -}}
 <meta name="twitter:card" content="summary_large_image">

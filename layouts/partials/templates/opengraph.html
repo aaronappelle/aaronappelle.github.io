@@ -35,9 +35,9 @@
   <meta property="og:type" content="website">
 {{- end }}
 
-{{- /* Use transparent image for homepage to prevent thumbnails */ -}}
+{{- /* Use favicon for homepage like Zach's site */ -}}
 {{- if .IsHome }}
-  <meta property="og:image" content="{{ "transparent.png" | absURL }}">
+  <meta property="og:image" content="{{ "favicon.svg" | absURL }}">
 {{- else if and .IsPage .Params.cover.image }}
   {{- /* Use cover image for individual pages */ -}}
   {{- if (ne .Params.cover.relative true) }}
