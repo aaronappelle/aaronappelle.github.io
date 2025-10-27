@@ -35,9 +35,8 @@
   <meta property="og:type" content="website">
 {{- end }}
 
-{{- /* Use favicon for homepage like Zach's site */ -}}
 {{- if .IsHome }}
-  <meta property="og:image" content="{{ "favicon.svg" | absURL }}">
+  <meta property="og:image" content="{{ "favicon.png" | absURL }}">
 {{- else if and .IsPage .Params.cover.image }}
   {{- /* Use cover image for individual pages */ -}}
   {{- if (ne .Params.cover.relative true) }}
