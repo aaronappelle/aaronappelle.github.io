@@ -58,7 +58,7 @@ params:
     profileMode:
           enabled: true
           title: Aaron Appelle
-          subtitle: "Hello! I am a final-year PhD candidate in the Pratt School of Engineering at Duke University, advised by <a href=\"https://pratt.duke.edu/people/jerome-lynch/\" style=\"color:darkblue;\">Jerome Lynch</a>. My doctoral work has focused on machine learning approaches to pedestrian and crowd modeling for location-based smart city services.<br><br>Recently, I was an AI resident at <a href=\"https://x.company/\" style=\"color:darkblue;\">Google X</a> working on generative models for architectural building design. Before my PhD, I completed a master's degree at Stanford University and bachelor's degree at Columbia University."
+          subtitle: "Hello! I am a final-year PhD candidate at Duke University advised by <a href=\"https://pratt.duke.edu/people/jerome-lynch/\" style=\"color:darkblue;\">Jerome Lynch</a>. My doctoral work focused on machine learning approaches to pedestrian and crowd modeling for location-based smart city services. My current research interests are in world models and video diffusion models for multi-agent simulation.<br><br>Recently, I was an AI resident at <a href=\"https://x.company/\" style=\"color:darkblue;\">Google X</a> working on generative models for architectural building design. Before my PhD, I completed a master's degree at Stanford University and bachelor's degree at Columbia University."
           imageUrl: "headshot.jpg"
           imageWidth: 160
           imageHeight: 160
