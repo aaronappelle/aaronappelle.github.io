@@ -5,7 +5,11 @@
     margin-inline-start: auto;
     margin-inline-end: auto;
     line-height: var(--header-height);
-    background: var(--code-bg);
+    background: linear-gradient(to bottom, rgba(245, 245, 245, 1) 0%, rgba(245, 245, 245, 0) 100%);
+}
+
+.dark .nav {
+    background: linear-gradient(to bottom, rgba(55, 56, 62, 1) 0%, rgba(55, 56, 62, 0) 100%);
 }
 
 .nav a {
