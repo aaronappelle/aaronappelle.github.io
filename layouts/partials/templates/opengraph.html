@@ -35,8 +35,11 @@
   <meta property="og:type" content="website">
 {{- end }}
 
-{{- /* Only show OG image for individual pages with cover images, not for homepage */ -}}
-{{- if and .IsPage .Params.cover.image -}}
+{{- /* Use transparent image for homepage to prevent thumbnails */ -}}
+{{- if .IsHome }}
+  <meta property="og:image" content="{{ "transparent.png" | absURL }}">
+{{- else if and .IsPage .Params.cover.image }}
+  {{- /* Use cover image for individual pages */ -}}
   {{- if (ne .Params.cover.relative true) }}
     <meta property="og:image" content="{{ .Params.cover.image | absURL }}">
   {{- else}}
