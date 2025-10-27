@@ -12,7 +12,7 @@ description: "A bit more about me."
 
 ---
 
-## Academic Info
+## Academic
 
 - Past life as a <span class="tooltip">structural engineer<span class="tooltip-text">subset of civil engineering for designing the structural systems of buildings, bridges, and other built infrastructure to resist gravity and environmental forces like wind and earthquakes</span></span>. Spent all my time trying to automate the calculations and spreadsheets
 - Been studying ML/AI since 2019. Most of my work so far has been relevant to built infrastructure, but current interests are much broader

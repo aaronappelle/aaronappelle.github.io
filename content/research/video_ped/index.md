@@ -16,7 +16,7 @@ editPost:
     URL: "https://doi.org/10.48550/arXiv.2510.20182"
     Text: "arXiv Preprint"
 quicklinks:
-    paper: "https://doi.org/10.48550/arXiv.2510.20182"
+    preprint: "https://doi.org/10.48550/arXiv.2510.20182"
 
 ---
 
@@ -24,7 +24,7 @@ quicklinks:
 
 ##### Download
 
-+ [Paper](https://doi.org/10.48550/arXiv.2510.20182)
++ [Preprint](https://doi.org/10.48550/arXiv.2510.20182)
 
 ---
 

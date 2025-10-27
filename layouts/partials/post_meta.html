@@ -31,6 +31,9 @@
   {{- with .paper }}
     {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" class=\"research-link-button\">Paper</a>" .) }}
   {{- end }}
+  {{- with .preprint }}
+    {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" class=\"research-link-button\">Preprint</a>" .) }}
+  {{- end }}
   {{- with .website }}
     {{- $quickLinks = $quickLinks | append (printf "<a href=\"%s\" class=\"research-link-button\">Website</a>" .) }}
   {{- end }}

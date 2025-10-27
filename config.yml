@@ -118,7 +118,7 @@ params:
     label:
       text: "Home"
       icon: favicon.svg
-      iconHeight: 18
+      iconHeight: 22
 
 markup:
     goldmark:
