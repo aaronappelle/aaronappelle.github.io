@@ -1,0 +1,222 @@
+{{- define "main" }}
+
+<style>
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header scroll behavior - hidden by default on home page */
+body.list .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+body.list .header.scrolled {
+    transform: translateY(0);
+}
+
+/* Section container styling */
+.section-container {
+    padding: 40px 0 60px 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Ensure sections have proper spacing */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Profile section adjustments for single page */
+.profile {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Smooth transitions between sections */
+.section-container .page-header {
+    margin-bottom: 1rem;
+    padding-top: 20px;
+}
+
+.section-container .post-content {
+    margin-bottom: 1.5rem;
+}
+
+/* Ensure proper spacing between research items */
+.section-container .post-entry {
+    margin-bottom: 2rem;
+}
+
+/* Style for section headers - more subtle and compact */
+.section-container > .page-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-container {
+        min-height: auto;
+        padding: 30px 0 40px 0;
+    }
+    
+    .profile {
+        min-height: 80vh;
+    }
+    
+    section {
+        scroll-margin-top: 100px;
+    }
+    
+    .section-container > .page-header h1 {
+        font-size: 1.5rem;
+    }
+}
+</style>
+
+{{- /* Profile Section */ -}}
+<section id="home" class="profile">
+    {{- with site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+        {{- $img := "" }}
+        {{- if not (urls.Parse .imageUrl).IsAbs }}
+            {{- $img = resources.Get .imageUrl }}
+        {{- end }}
+        {{- if $img }}
+            {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+            {{- if hugo.IsExtended -}}
+                {{- $processableFormats = $processableFormats | append "webp" -}}
+            {{- end -}}
+            {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+            {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+                {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
+                    {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
+                {{- else if .imageHeight }}
+                    {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
+                {{ else if .imageWidth }}
+                    {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
+                {{ else }}
+                    {{- $img = $img.Resize "150x150" }}
+                {{- end }}
+            {{- end }}
+            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- else }}
+        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- end }}
+        {{- end }}
+        <h1>{{ .title | default site.Title | markdownify }}</h1>
+        <span>{{ .subtitle | markdownify }}</span>
+        {{- partial "social_icons.html" . -}}
+
+        {{- with .buttons }}
+        <div class="buttons">
+            {{- range . }}
+            <a class="button" href="{{ .url }}" rel="noopener" title="{{ .name }}">
+                <span class="button-inner">
+                    {{ .name }}
+                </span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end}}
+</section>
+
+{{- /* Research Section */ -}}
+<section id="research" class="section-container">
+    {{- $researchPage := .Site.GetPage "/research" }}
+    {{- if $researchPage }}
+    <header class="page-header">
+        <h1>
+            {{- $researchPage.Title -}}
+        </h1>
+    </header>
+    
+    {{- if $researchPage.Content }}
+    <div class="post-content">
+        {{- $researchPage.Content -}}
+    </div>
+    {{- end }}
+    
+    {{- $pages := $researchPage.RegularPages.ByWeight }}
+    {{- range $index, $page := $pages }}
+    <article class="post-entry">
+        {{- $isHidden := ($page.Param "cover.hiddenInList") | default ($page.Param "cover.hidden") | default false }}
+        {{- partial "cover.html" (dict "cxt" $page "IsSingle" false "isHidden" $isHidden) }}
+        <div class="entry-text-wrapper">
+            <header class="entry-header">
+                <h2 class="entry-hint-parent">
+                    {{- $page.Title }}
+                    {{- if $page.Draft }}
+                    <span class="entry-hint" title="Draft">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" fill="currentColor">
+                            <path d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+                        </svg>
+                    </span>
+                    {{- end }}
+                </h2>
+            </header>
+            {{- if (ne ($page.Param "hideSummary") true) }}
+            <div class="entry-content">
+                {{- if site.Params.showResearchSummaries }}
+                <p>{{ $page.Summary | plainify | htmlUnescape }}{{ if $page.Truncated }}...{{ end }}</p>
+                {{- else if $page.Params.venueText }}
+                <p>{{ $page.Params.venueText }}</p>
+                {{- else }}
+                <p>{{ $page.Summary | plainify | htmlUnescape }}{{ if $page.Truncated }}...{{ end }}</p>
+                {{- end }}
+            </div>
+            {{- end }}
+            {{- if not ($page.Param "hideMeta") }}
+            <footer class="entry-footer">
+                {{- partial "post_meta.html" $page -}}
+            </footer>
+            {{- end }}
+        </div>
+        {{- $enableDetailPage := ($page.Param "enableDetailPage") | default false }}
+        {{- if $enableDetailPage }}
+        <a class="entry-link" aria-label="post link to {{ $page.Title | plainify }}" href="{{ $page.Permalink }}"></a>
+        {{- end }}
+    </article>
+    {{- end }}
+    {{- end }}
+</section>
+
+{{- /* More Info Section */ -}}
+<section id="moreinfo" class="section-container">
+    {{- $moreinfoPage := .Site.GetPage "/moreinfo" }}
+    {{- if $moreinfoPage }}
+    <header class="page-header">
+        <h1>
+            {{- $moreinfoPage.Title -}}
+        </h1>
+    </header>
+    
+    {{- if $moreinfoPage.Content }}
+    <div class="post-content">
+        {{- $moreinfoPage.Content -}}
+    </div>
+    {{- end }}
+    {{- end }}
+</section>
+
+{{- end }}{{- /* end main */ -}}
+

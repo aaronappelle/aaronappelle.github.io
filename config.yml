@@ -16,7 +16,7 @@ menu:
         #   url: books/
         #   weight: 5 
         - name: Research
-          url: research/
+          url: "#research"
           weight: 1
         # - name: Courses
         #   url: courses/
@@ -25,7 +25,7 @@ menu:
         #   url: data/
         #   weight: 4 
         - name: More Info
-          url: moreinfo/
+          url: "#moreinfo"
           weight: 2
         # - name: Blog
         #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
@@ -64,9 +64,9 @@ params:
           imageHeight: 160
           buttons:
             - name: Research
-              url: research/
+              url: "#research"
             - name: More Info
-              url: moreinfo/
+              url: "#moreinfo"
             # - name: Data
             #   url: data/
             # - name: Books

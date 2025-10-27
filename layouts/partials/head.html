@@ -153,3 +153,9 @@
 {{- partial "math.html" .}}
 {{ end }} 
 
+{{- /* Smooth scrolling script for single page layout */ -}}
+{{- if .IsHome }}
+{{- $smoothScroll := resources.Get "js/smooth-scroll.js" | resources.Minify }}
+<script defer src="{{ $smoothScroll.RelPermalink }}"></script>
+{{- end }}
+
