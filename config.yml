@@ -57,8 +57,8 @@ params:
               url: "#moreinfo"
 
     socialIcons:
-        # - name: CV
-        #   url: cv.pdf
+        - name: CV
+          url: cv_AA.pdf
         - name: Email
           url: mailto:aaron.appelle@duke.edu
         - name: Google Scholar
@@ -73,7 +73,7 @@ params:
         favicon: "favicon.png"
         favicon16x16: "favicon.png"
         favicon32x32: "favicon.png"
-        apple_touch_icon: "apple-touch-icon.png"
+        apple_touch_icon: "favicon.png"
     cover:
         hiddenInList: false
         hiddenInSingle: true
