@@ -16,8 +16,8 @@ description: "A bit more about me."
 
 - Past life as a <span class="tooltip">structural engineer<span class="tooltip-text">subset of civil engineering for designing the structural systems of buildings, bridges, and other built infrastructure to resist gravity and environmental forces like wind and earthquakes</span></span>. Spent all my time trying to automate the calculations and spreadsheets
 - Been studying ML/AI since 2019. Most of my work so far has been relevant to built infrastructure, but current interests are much broader
-- Interned for 8 months as an AI Resident at [Google X](https://x.company/) working on <span class="tooltip">generative<span class="tooltip-text">transformer/LLM-based</span></span> models for architectural design grounded in strong physical constraints
-- Did a Fulbright research fellowship post-bachelors in Switzerland at EPFL for 1 year
+- Interned for 8 months as an AI Resident at <span class="tooltip">[Google X](https://x.company/)<span class="tooltip-text">aka "the moonshot factory" -- Waymo, Google Glass, etc.</span></span> working on generative models for architectural design conditioned on physical and performance constraints
+- Did a Fulbright research fellowship post-bachelors in <span class="tooltip">Switzerland<span class="tooltip-text">forever enamored with their train system and mountains</span></span> at EPFL for 1 year
 
 ---
 

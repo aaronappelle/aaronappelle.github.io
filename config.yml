@@ -12,24 +12,12 @@ taxonomies:
 
 menu:
     main:
-        # - name: Books
-        #   url: books/
-        #   weight: 5 
         - name: Research
           url: "#research"
           weight: 1
-        # - name: Courses
-        #   url: courses/
-        #   weight: 3
-        # - name: Data
-        #   url: data/
-        #   weight: 4 
         - name: More Info
           url: "#moreinfo"
           weight: 2
-        # - name: Blog
-        #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-        #   weight: 6
 
 params:
     description: "This website hosts Aaron Appelle's research, curriculum vitae, and contact information."
@@ -67,42 +55,18 @@ params:
               url: "#research"
             - name: More Info
               url: "#moreinfo"
-            # - name: Data
-            #   url: data/
-            # - name: Books
-            #   url: books/
-            # - name: Courses
-            #   url: courses/
-            # - name: Tags
-            #   url: tags/
-            # - name: Archive
-            #   url: archive/
-            # - name: Blog
-            #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
 
     socialIcons:
         # - name: CV
         #   url: cv.pdf
         - name: Email
           url: mailto:aaron.appelle@duke.edu
-        # - name: Zoom
-        #   url: https://www.zoom.us/my/igelfeld
-        # - name: Location
-        #   url: location/
-        # - name: Office Hours
-        #   url: officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?hl=en&user=dNMxP3EAAAAJ&view_op=list_works&sortby=pubdate
         - name: GitHub
           url: https://github.com/aaronappelle
-        # - name: Substack
-        #   url: https://pmichaillat.substack.com
-        # - name: YouTube
-        #   url: https://www.youtube.com/@pmichaillat
-        # - name: Twitter
-        #   url: https://x.com/pmichaillat
         # - name: Bluesky
-        #   url: https://bsky.app/profile/pmichaillat.bsky.social
+        #   url: https://bsky.app/profile/newuser.bsky.social
 
     assets:
         disableScrollBarStyle: true
