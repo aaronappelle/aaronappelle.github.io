@@ -15,7 +15,7 @@ description: "A bit more about me."
 ## Academic
 
 - Past life as a <span class="tooltip">structural engineer<span class="tooltip-text">subset of civil engineering for designing the structural systems of buildings, bridges, and other built infrastructure to resist gravity and environmental forces like wind and earthquakes</span></span>. Spent all my time trying to automate the calculations and spreadsheets
-- Been studying ML/AI since 2019. Most of my work so far has been relevant to built infrastructure, but current interests are much broader
+- Been studying ML/AI since 2019 at Stanford (<span class="tooltip">CS229<span class="tooltip-text">Machine Learning</span></span>, <span class="tooltip">CS230<span class="tooltip-text">Deep Learning</span></span>, <span class="tooltip">CS361<span class="tooltip-text">Design Optimization</span></span>, <span class="tooltip">CS161<span class="tooltip-text">Design and Analysis of Algorithms</span></span>)
 - Interned for 8 months as an AI Resident at <span class="tooltip">[Google X](https://x.company/)<span class="tooltip-text">aka "the moonshot factory" -- Waymo, Google Glass, etc.</span></span> working on <span class="tooltip">generative models<span class="tooltip-text">co-inventor on 3 US patents</span></span> for architectural design conditioned on physical and performance constraints
 - Did a Fulbright research fellowship post-bachelors in <span class="tooltip">Switzerland<span class="tooltip-text">forever enamored with their train system and mountains</span></span> at EPFL for 1 year
 
